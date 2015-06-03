@@ -1,7 +1,7 @@
 package crypter;
 
 /**
- * Created by Ali on 28.05.2015.
+ * Created by André on 28.05.2015.
  */
 class CrypterCaesar implements Crypter {
     private final char[] ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();

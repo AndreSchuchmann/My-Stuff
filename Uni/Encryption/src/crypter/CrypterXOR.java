@@ -1,20 +1,20 @@
 package crypter;
 
 /**
- * Created by Ali on 28.05.2015.
+ * Created by AndrÃ© on 28.05.2015.
  */
 
 class CrypterXOR implements Crypter {
     private final char[] ALPHABET = "@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_".toCharArray();
 
     /**
-     * verschlüssel einen String mit der XOR verschlüsselung
-     * @param key Schlüssel, der verwendet werden soll.
-     * @param message Nachricht, die Verschlüsselt werden soll.
+     * verschlï¿½ssel einen String mit der XOR verschlï¿½sselung
+     * @param key Schlï¿½ssel, der verwendet werden soll.
+     * @param message Nachricht, die Verschlï¿½sselt werden soll.
      *
-     * @return einen Verschlüsselten wert
-     * @throws IllegalKeyException Wenn der key ungültig ist
-     * @throws IllegalMessageException Wenn die message ungültig ist
+     * @return einen Verschlï¿½sselten wert
+     * @throws IllegalKeyException Wenn der key ungï¿½ltig ist
+     * @throws IllegalMessageException Wenn die message ungï¿½ltig ist
      */
     @Override
     public String verschluesseln(String key, String message) throws IllegalKeyException, IllegalMessageException {
@@ -32,10 +32,10 @@ class CrypterXOR implements Crypter {
     }
 
     /**
-     * entschlüssel eine Nachricht mit XOR entschlüsselung, ruft die XOR Verschlüsselung auf
+     * entschlï¿½ssel eine Nachricht mit XOR entschlï¿½sselung, ruft die XOR Verschlï¿½sselung auf
      *
-     * @param key Schlüssel, der verwendet werden soll.
-     * @param cypherText Nachricht, die entschlüsselt werden soll.
+     * @param key Schlï¿½ssel, der verwendet werden soll.
+     * @param cypherText Nachricht, die entschlï¿½sselt werden soll.
      *
      * @return
      * @throws IllegalKeyException
@@ -63,7 +63,7 @@ class CrypterXOR implements Crypter {
     /**
      * mache den key so lange wie die message
      * @param key
-     * @return einen verlängerten key
+     * @return einen verlï¿½ngerten key
      */
     private char[] keyVerlaengern(String key,String message){
         char[] keyTemp = new char[message.length()];
@@ -75,8 +75,8 @@ class CrypterXOR implements Crypter {
     }
 
     /**
-     * überprüfe ob der key gültig ist
-     * @param key key der zu überprüfen ist
+     * ï¿½berprï¿½fe ob der key gï¿½ltig ist
+     * @param key key der zu ï¿½berprï¿½fen ist
      * @throws IllegalKeyException wenn der key null ist
      * oder wenn der key nicht buchstaben von A bis Z oder @, \ [,],_ , ^ beinhaltet
      */

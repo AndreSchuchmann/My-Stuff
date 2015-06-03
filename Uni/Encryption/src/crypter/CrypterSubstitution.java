@@ -1,21 +1,21 @@
 package crypter;
 
 /**
- * Created by Ali on 21.05.2015.
+ * Created by AndrÃ© on 21.05.2015.
  */
 //TODO: Uppercase!
 class CrypterSubstitution implements Crypter {
     private final char[] ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".toCharArray();
 
     /**
-     * Verschlüsselt die message mit dem key durch Substitution
+     * Verschlï¿½sselt die message mit dem key durch Substitution
      *
-     * @param key     Schlüssel, der verwendet werden soll.
-     * @param message Nachricht, die Verschlüsselt werden soll.
+     * @param key     Schlï¿½ssel, der verwendet werden soll.
+     * @param message Nachricht, die Verschlï¿½sselt werden soll.
      * @return
      * @throws IllegalKeyException     wenn key nicht 26 buchstaben hat oder
      *                                 nicht jeden Buchstaben nur einmal hat
-     * @throws IllegalMessageException Wenn die nachricht nicht ausschließlich
+     * @throws IllegalMessageException Wenn die nachricht nicht ausschlieï¿½lich
      *                                 aus Buchstaben besteht
      */
     @Override
@@ -43,10 +43,10 @@ class CrypterSubstitution implements Crypter {
     }
 
     /**
-     * Entschlüsselt den Key durch Substitution
+     * Entschlï¿½sselt den Key durch Substitution
      *
-     * @param key        Schlüssel, der verwendet werden soll.
-     * @param cypherText Nachricht, die entschlüsselt werden soll.
+     * @param key        Schlï¿½ssel, der verwendet werden soll.
+     * @param cypherText Nachricht, die entschlï¿½sselt werden soll.
      * @return
      * @throws IllegalKeyException
      * @throws IllegalMessageException
@@ -70,9 +70,9 @@ class CrypterSubstitution implements Crypter {
     }
 
     /**
-     * Überprüft ob der key gültig ist
+     * ï¿½berprï¿½ft ob der key gï¿½ltig ist
      * 1. check ob null
-     * 2. check ob nur Großbuchstaben
+     * 2. check ob nur Groï¿½buchstaben
      * 3. check auf 26 Zeichen
      * 3. check dass jeder Buchstabe nur einmal vorkommt
      *
@@ -102,11 +102,11 @@ class CrypterSubstitution implements Crypter {
 
 
     /**
-     * überprüft ob die Nachricht nur aus Buchstaben besteht
+     * ï¿½berprï¿½ft ob die Nachricht nur aus Buchstaben besteht
      *
      * @param message
      * @throws IllegalMessageException wenn die Nachricht nicht nur
-     *                                 Buchstaben enthält
+     *                                 Buchstaben enthï¿½lt
      */
     public void checkMessage(String message) throws IllegalMessageException {
         if(message==null){

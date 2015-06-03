@@ -1,7 +1,7 @@
 package crypter;
 
 /**
- * Created by Ali on 02.06.2015.
+ * Created by AndrÃ© on 02.06.2015.
  */
 
 public class CrypterFactory {
@@ -11,8 +11,7 @@ public class CrypterFactory {
 
     public CrypterFactory() {
     }
-    // für singleton:
-    //  crypter.CrypterFactory crypterFactory = new crypter.CrypterFactory();
+
 
     public Crypter getCrypter(CrypterVerfahren c) {
         switch (c) {
